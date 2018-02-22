@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Guessing Game</title>
+
+    <!-- Bootstrap and CSS here-->
+    <link rel='stylesheet' type='text/css' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css'>
+    <link rel='stylesheet' type='text/css' href='css/style.css'>
+
+  </head>
+  <style>
+      #player-input{
+          font-size: 50px;
+          height: 160px;
+          width: 160px;
+          border-radius: 50%;
+      }
+      #submit{
+          position: absolute;
+          top: 110px;
+          left: 110px;
+          height: 60px;
+          width: 60px;
+          border-radius: 50%;
+      }
+      #input-parent{
+          width: 160px;
+          margin: 5% auto 50px;
+          position: relative
+      }
+      #headers{
+          color: white;
+      }
+  
+  </style>
+  <body>
+
+      <div id='app' class='container center'>
+
+        <div id='headers'>
+          <h1 id='title'>Play the Guessing Game!</h1>
+          <h3 id='subtitle'>Guess a number between 1-100</h3>
+        </div>
+
+        <div id='main'>
+          <div id='input-parent'>
+            <input id='player-input' class='center' placeholder="#" maxlength='3' autofocus=autofocus></input>
+            <button class='btn btn-success' id='submit'>Go!</button>
+          </div>
+
+          <div id='guesses'>
+            <ul id='guess-list'>
+              <li class='guess'>-</li>
+              <li class='guess'>-</li>
+              <li class='guess'>-</li>
+              <li class='guess'>-</li>
+              <li class='guess'>-</li>
+            </ul>
+          </div>
+
+          <div id="menu-btns">
+            <button class='btn btn-large center' id='reset'>Reset</button>
+            <button class='btn btn-large center' id='hint'>Hint</button>
+          </div>
+        </div>
+      </div>
+
+
+
+    <div id='footer' class='center'>
+        <div class='row'>
+          <div class='col-sm-4'>
+            <img src='img/fa-logo@2x.png'></img>
+          </div>
+
+          <div class='col-sm-4'>
+            <h4>Project by John Walsh</h4>
+          </div>
+
+          <div class='col-sm-4'>
+            <img src='img/grace_hopper_academy.png'></img>
+          </div>
+
+
+        </div>
+    </div>
+
+
+
+
+    <script
+  src="https://code.jquery.com/jquery-3.3.1.js"
+  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+  crossorigin="anonymous"></script>
+
+  <script src="js/GuessingGame.js"></script>
+
+  
+
+
+  </body>
+</html>
