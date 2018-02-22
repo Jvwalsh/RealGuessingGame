@@ -65,6 +65,7 @@ Game.prototype.checkGuess = function(){
     if(this.winningNumber === this.playersGuess){
         $('#hint', '#submit').prop('disabled', true);
         $('#subtitle').text("Press Reset to play this game again!");
+        $('#submit').prop('disabled', true);
         return "You Win!"
     }
 
