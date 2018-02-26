@@ -25,7 +25,11 @@ Game.prototype.isLower = function (){
     }
 }
 Game.prototype.playersGuessSubmission = function(num){
-    if(num<=0){
+    if(!num){
+        console.log("this happened...");
+        throw 'That is an invalid guess.';
+    }
+    else if(num<=0){
     
         throw "That is an invalid guess.";
     }
@@ -144,8 +148,8 @@ $(document).ready(function() {
 
 
         $('#submit').click(function(e) {
-        console.log('Submit button has been clicked');
-        console.log('Amazing! It"s actually working!');
+        //console.log('Submit button has been clicked');
+        //console.log('Amazing! It"s actually working!');
             makeAGuess(game);
         })
 
